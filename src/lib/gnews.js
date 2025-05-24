@@ -303,7 +303,9 @@ export async function getTopGNewsHeadlines() {
 }
 
 // Export the detailed function for advanced usage
-export { getFourCountryEuropeanNews };
+export async function getFourCountryEuropeanNewsExport() {
+  return await getFourCountryEuropeanNews();
+}
 
 // Clear cache function
 export function clearEuropeanCache() {
